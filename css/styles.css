@@ -1,0 +1,81 @@
+
+/*
+#00395d celeste oscuro 
+#006596 intermedio 
+#009dd5 celeste mas clarito
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.banderaARG{
+    width: 2rem;
+}
+.banderaESP{
+    width: 2rem;
+}
+.jugador{
+    height: 20rem;
+}
+*{ margin: 0; padding: 0; }
+body{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+header{
+    display: flex;
+    background-color: #00395d;
+    justify-content: space-between;
+}
+header img{
+    display: flex;
+    justify-content: flex-start;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    
+}
+header img{
+    display: flex;
+    
+}
+header nav{
+    display: flex;
+}
+header ul li{
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1.5rem;
+}
+ul {
+    list-style: none;
+    
+}
+main ul li{
+
+    display: inline-block;
+    width: 24rem;
+    
+    margin: 1rem;
+    background-color: #006596;
+    color: white;
+    font-size: 3rem;
+}
+footer{
+    background-color: #00395d
+}
+footer img{
+    width: 2rem;
+}
+footer p{
+    font-size: 4rem;
+    margin: 1rem;
+    
+}
+
+/*.contenedor{
+    width: 12rem;
+height: 6rem;
+background-color:#D3D3D3;
+padding: 2rem;
+border: 5px solid #000;
+}*/
