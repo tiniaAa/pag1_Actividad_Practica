@@ -24,6 +24,7 @@ header{
     display: flex;
     background-color: #00395d;
     justify-content: space-between;
+    align-items: center;
 }
 header img{
     display: flex;
@@ -50,6 +51,16 @@ ul {
     list-style: none;
     
 }
+
+main p{
+    
+    font-size: 1.5rem;
+    background-color: #00395d;
+}
+#puntos{
+    font-size: 1.5rem;
+    background-color: rgb(190, 209, 255);
+}
 main ul li{
 
     display: inline-block;
@@ -65,17 +76,31 @@ footer{
 }
 footer img{
     width: 2rem;
+    margin: 1rem;
 }
 footer p{
+    color: white;
     font-size: 4rem;
     margin: 1rem;
-    
 }
 
-/*.contenedor{
-    width: 12rem;
-height: 6rem;
-background-color:#D3D3D3;
-padding: 2rem;
-border: 5px solid #000;
-}*/
+
+/*html de los torneos */
+
+div{
+    background-color:rgb(190, 209, 255);
+    padding: 2rem;
+    border: 0.3rem solid black;
+}
+.LOGO{
+    display: inline-block;
+    width: 15rem;
+}
+.TORNEOS{
+    display: inline;
+    background-color: rgb(190, 209, 255) ;
+}
+main div h2{
+    font-size: 2rem;
+}
+/*rgb(210, 223, 255)*/
