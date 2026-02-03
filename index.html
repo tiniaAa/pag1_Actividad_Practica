@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranking FIP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
         <!--Logo y para navergar-->
+        <!--podria poner el navbar de boostrap (a ver)-->
+        <!--hacer responsive-->
+        
         <img src="./img/LogoFipBLANCO.png" alt="">
-        <nav>
+
+        <nav class="navbar navbar-expand-lg">
+            <div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./pages/Torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Ranking masculino</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./pages/femenino.html">Ranking femenino</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--<nav> anterior nav
             <ul>
                 <li><a href="./pages/Torneos.html">Torneos</a></li>
                 <li><a href="./index.html">Ranking Masculino</a></li>
                 <li><a href="./pages/femenino.html">Ranking Femenino</a></li>
             </ul>
-        </nav>
+        </nav>-->
     </header>
     <main>
         <h1>FIP RANKING</h1>
@@ -24,31 +52,36 @@
         
         
         <!--Podria ser una lista ordenada PERO, el ranking no va exactamente de 1 a 10-->
-        <ul>
+        <section class="contenedor-index">
               <!--Top 10 jugadores-->
-            <li>1-<img src="./img/PosibleBanderaArg1.png" alt="bandera circular argentina" class="banderaARG"> Agustin <br> Tapia <br> <img src="./img/Tapia.png" alt="Imgen de Agustin Tapia" class="jugador"><p>PUNTOS:19800</p></li>
-            <li>1-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP">Arturo <br> Coello <br> <img src="./img/Coello.png" alt="" class="jugador"><p>PUNTOS:19800</p></li>
-            <li>3-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP">Alejandro <br> Galan <br> <img src="./img/Galan.png" alt="" class="jugador"><p>PUNTOS:17320</p></li>
-            <li>3-<img src="./img/PosibleBanderaArg1.png" alt="bandera circular argentina" class="banderaARG">Federico <br> Chingoto <br> <img src="./img/Chingoto.png" alt="" class="jugador"><p>PUNTOS:17320</p></li>
-            <li>5-<img src="./img/PosibleBanderaArg1.png" alt="bandera circular argentina" class="banderaARG">Franco <br> Stupaczuk <br> <img src="./img/stupa.png" alt="" class="jugador"><p>PUNTOS:7905</p></li>
-            <li>6-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP">Juan <br> Lebron <br> <img src="./img/Lebron.png" alt="" class="jugador"><p>PUNTOS:7845</p></li>
-            <li>7-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP">Jorge <br> Nieto <br> <img src="./img/Nieto.png" alt="" class="jugador"><p>PUNTOS:6322</p></li>
-            <li>7-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP">Miguel <br> Yanguas <br> <img src="./img/Yanguas.png" alt="" class="jugador"><p>PUNTOS:6322</p></li>
-            <li>9-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP">Francisco <br> Navarro <br> <img src="./img/Navarro.png" alt="" class="jugador"><p>PUNTOS:6115</p></li>
-            <li>10-<img src="./img/PosibleBanderaArg1.png" alt="bandera circular argentina" class="banderaARG">Leandro <br> Augsburger <br> <img src="./img/ausburguer.png" alt="" class="jugador"><p>PUNTOS:5155</p></li>
+            <div class="jugador"><p>1-<img src="./img/PosibleBanderaArg1.png" alt="bandera circular argentina" class="banderaARG"> Agustin  Tapia</p> <br> <img src="./img/Tapia.png" alt="Imgen de Agustin Tapia" class="jugador"><p>PUNTOS:19800</p></div>
+            <div class="jugador"><p>1-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP"> Arturo  Coello</p> <br> <img src="./img/Coello.png" alt="" class="jugador"><p>PUNTOS:19800</p></div>
+            <div class="jugador"><p>3-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP"> Alejandro  Galan</p> <br> <img src="./img/Galan.png" alt="" class="jugador"><p>PUNTOS:17320</p></div>
+            <div class="jugador"><p>3-<img src="./img/PosibleBanderaArg1.png" alt="bandera circular argentina" class="banderaARG"> Federico  Chingoto</p> <br> <img src="./img/Chingoto.png" alt="" class="jugador"><p>PUNTOS:17320</p></div>
+            <div class="jugador"><p>5-<img src="./img/PosibleBanderaArg1.png" alt="bandera circular argentina" class="banderaARG"> Franco  Stupaczuk</p> <br> <img src="./img/stupa.png" alt="" class="jugador"><p>PUNTOS:7905</p></div>
+            <div class="jugador"><p>6-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP"> Juan  Lebron</p> <br> <img src="./img/Lebron.png" alt="" class="jugador"><p>PUNTOS:7845</p></div>
+            <div class="jugador"><p>7-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP"> Jorge  Nieto</p> <br> <img src="./img/Nieto.png" alt="" class="jugador"><p>PUNTOS:6322</p></div>
+            <div class="jugador"><p>7-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP"> Miguel  Yanguas</p> <br> <img src="./img/Yanguas.png" alt="" class="jugador"><p>PUNTOS:6322</p></div>
+            <div class="jugador"><p>9-<img src="./img/banderaEspañana.png" alt="bandera circular españa" class="banderaESP"> Francisco  Navarro</p> <br> <img src="./img/Navarro.png" alt="" class="jugador"><p>PUNTOS:6115</p></div>
+            <div class="jugador"><p>10-<img src="./img/PosibleBanderaArg1.png" alt="bandera circular argentina" class="banderaARG"> Leandro  Augsburger</p> <br> <img src="./img/ausburguer.png" alt="" class="jugador"><p>PUNTOS:5155</p></div>
             
-        </ul>
+        </section>
        
         <!--Forma en la que se obtienen los puntos en FIP-->
         <p id="puntos">Los puntos FIP se obtienen participando y ganando partidos en torneos oficiales de la Federación Internacional de Pádel (FIP), como los Premier Padel y el CUPRA FIP Tour, donde mayor es la categoría del torneo y más rondas se avanzan, más puntos se consiguen; por ejemplo, ganar un torneo Platinum da 300 puntos y un torneo Gold da 150 puntos, sumándose a un ranking de 52 semanas donde los puntos se defienden o se pierden anualmente. </p>
 
     </main>
     <footer>
-        <p>Redes</p>
+        <p id="RedesMedia">Redes</p>
+        <div class="contenedor-redes">
         <a href="https://www.instagram.com/padelfip/" target="_blank"><img src="./img/logotipo-de-instagram.png" alt="Instagram"></a>
         <a href="https://www.facebook.com/padelfip" target="_blank"><img src="./img/facebook.png" alt="facebook"></a>
         <a href="https://x.com/padelfip" target="_blank"><img src="./img/X.png" alt="X"></a>
         <a href="https://www.youtube.com/@padelfip" target="_blank"><img src="./img/youtube.png" alt="Youtube"></a>
+        </div>
     </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

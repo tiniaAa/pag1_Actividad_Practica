@@ -6,66 +6,94 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.banderaARG{
-    width: 2rem;
-}
-.banderaESP{
-    width: 2rem;
-}
-.jugador{
-    height: 20rem;
-}
 *{ margin: 0; padding: 0; }
 body{
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
+    background-image: url('../img/imagenFondoOpcion2.png');
+    
+    /* Hace que la imagen cubra toda la pantalla*/
+    background-size: cover; 
+    
+    /* Evita que se repita */
+    background-repeat: no-repeat;
+    /*Para que se quede fijo con el scroll*/
+    background-attachment: fixed;
 }
 header{
     display: flex;
     background-color: #00395d;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top:0px
 }
 header img{
-    display: flex;
-    justify-content: flex-start;
+    height: 7rem;
 }
-header a{
+.nav-link{
     color: white;
     text-decoration: none;
-    
 }
-header img{
-    display: flex;
-    
+header a:hover{
+    color: black;
 }
-header nav{
-    display: flex;
+
+header{
+    justify-content: space-between;
 }
+
 header ul li{
     font-size: 2rem;
     display: inline-block;
     padding: 1.5rem;
 }
-ul {
-    list-style: none;
-    
+.banderaARG{
+    width: 2rem;
+    vertical-align: middle;
+}
+.banderaESP{
+    width: 2rem;
+    vertical-align: middle;
+}
+.jugador{
+
+   width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    background-color: #006596;
+
+    object-fit: cover;
+    object-position: top;
 }
 
 main p{
-    
+    color: white;
     font-size: 1.5rem;
     background-color: #00395d;
+    margin-bottom: 0;
+    
 }
 #puntos{
+    color: black;
     font-size: 1.5rem;
     background-color: rgb(190, 209, 255);
+}
+.contenedor-index{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;/*<-- puse en 2 columnas no para hacerlo responsive, sino para denominar parejas 1,2,3,4 y sucesivamente (a pesar de no todos ser parejas)*/ 
+    grid-template-rows: repeat(6, auto); 
+    gap: 3px 30px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 main ul li{
 
     display: inline-block;
     width: 24rem;
-    
     margin: 1rem;
     background-color: #006596;
     color: white;
@@ -86,21 +114,81 @@ footer p{
 
 
 /*html de los torneos */
+.contenerdor{
+    
+    /*border: 2px solid black;*/
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 
-div{
-    background-color:rgb(190, 209, 255);
+.container-fluid{
+    background-color:rgba(112, 155, 255, 0.285);
     padding: 2rem;
-    border: 0.3rem solid black;
+    align-items:center;
+    justify-items:center;
+    
+}
+.row{
+    margin: 4rem;
 }
 .LOGO{
     display: inline-block;
     width: 15rem;
+    
 }
 .TORNEOS{
     display: inline;
-    background-color: rgb(190, 209, 255) ;
+    background-color:rgba(255, 255, 255, 0);
+    
 }
-main div h2{
+.h2{
     font-size: 2rem;
 }
+
 /*rgb(210, 223, 255)*/
+
+
+
+
+/*El Disseño sin el medyya query resulta ser bastante responsive, probar comentando a partir de este codigo, lo hago para cumplir con la entrega
+|
+|
+|
+v
+*/
+
+/*celulares*/
+
+@media (max-width:650px)
+{
+    main h1{
+        color: white;
+    }
+    main h2{
+        color: white;
+    }
+     
+    .contenedor-index{
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px 0px;
+        align-items: center;
+        width: 80%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    
+    #RedesMedia{
+        display: none;
+    }
+    #puntos{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }    
+    .contenedor-redes{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        justify-content: space-evenly;
+    }
+}
