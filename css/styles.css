@@ -81,7 +81,7 @@ main p{
 }
 .contenedor-index{
     display: grid; 
-    grid-template-columns: 1fr 1fr;/*<-- puse en 2 columnas no para hacerlo responsive, sino para denominar parejas 1,2,3,4 y sucesivamente (a pesar de no todos ser parejas)*/ 
+    grid-template-columns: 1fr 1fr 1fr ; 
     grid-template-rows: repeat(6, auto); 
     gap: 3px 30px;
     align-items: center;
@@ -90,6 +90,16 @@ main p{
     max-width: 1024px;
     margin: 0 auto;
 }
+.contenedor-index > div:last-child { /* agarro el ultimo para que no quede a la izquierda(fue realizado con ayuda de la IA)*/
+    grid-column: 2; 
+    justify-self: center; /* Se asegura que la tarjeta esté centrada en su celda */
+}
+
+/*no estoy conforme con que el ultimo quede colgado, pero para la proxima entrega voy a aplicar un carrusel*/
+
+
+
+
 main ul li{
 
     display: inline-block;
@@ -150,12 +160,7 @@ footer p{
 
 
 
-/*El Disseño sin el medyya query resulta ser bastante responsive, probar comentando a partir de este codigo, lo hago para cumplir con la entrega
-|
-|
-|
-v
-*/
+
 
 /*celulares*/
 
@@ -192,3 +197,16 @@ v
         justify-content: space-evenly;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
