@@ -1,0 +1,15 @@
+@use "./variables" as* ;
+
+*{ margin: 0; padding: 0; }
+
+body{
+    text-align: center;
+    font-family: $fuente;
+    background-image: url('../img/imagenFondoOpcion2.png');
+    /* Hace que la imagen cubra toda la pantalla*/
+    background-size: cover; 
+    /* Evita que se repita */
+    background-repeat: no-repeat;
+    /*Para que se quede fijo con el scroll*/
+    background-attachment: fixed;
+}

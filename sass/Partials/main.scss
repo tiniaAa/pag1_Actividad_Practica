@@ -1,0 +1,90 @@
+@use "./variables" as *; 
+
+main{
+    p{
+        color: white;
+        font-size: 1.5rem;
+        background-color: $celesteOscuro;
+        margin-bottom: 0;
+    }
+    ul{
+        li{
+            /*no recuerdo esto me parece que ya no es necesasrio */
+        }
+    }
+}
+
+.banderaARG{
+    width: 2rem;
+    vertical-align: middle;
+}
+.banderaESP{
+    width: 2rem;
+    vertical-align: middle;
+}
+.jugador{
+
+   width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    background-color: $celesteInermedio;
+
+    object-fit: cover;
+    object-position: top;
+}
+#puntos{
+    color: black;
+    font-size: 1.5rem;
+    background-color: rgb(190, 209, 255);
+}
+.contenedor-index{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-template-rows: repeat(6, auto); 
+    gap: 3px 30px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.contenedor-index > div:last-child { /* agarro el ultimo para que no quede a la izquierda(fue realizado con ayuda de la IA)*/
+    grid-column: 2; 
+    justify-self: center; /* Se asegura que la tarjeta esté centrada en su celda */
+}
+
+
+/*Comienzo css de torneos
+🡣*/
+.contenerdor{
+    
+    /*border: 2px solid black;*/
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.container-fluid{
+    background-color:$celesteBienClarito;
+    padding: 2rem;
+    align-items:center;
+    justify-items:center;
+    
+}
+.row{
+    margin: 4rem;
+}
+.LOGO{
+    display: inline-block;
+    width: 15rem;
+    
+}
+.TORNEOS{
+    display: inline;
+    background-color:rgba(255, 255, 255, 0);
+    
+}.h2{
+    font-size: 2rem;
+}
+/*Fin de la css de torneos */
+
+
+

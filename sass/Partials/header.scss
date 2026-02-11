@@ -1,0 +1,27 @@
+@use "./variables.scss" as*;
+
+header{
+    display: flex;
+    background-color: $celesteOscuro;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    img{
+        height: 7rem;
+    }
+    ul{
+        li{
+            font-size: 2rem;
+            display: inline-block;
+            padding: 1.5rem;
+        }
+    }
+    a:hover{
+        color: black;
+    }
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
