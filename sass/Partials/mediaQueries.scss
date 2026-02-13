@@ -30,4 +30,14 @@
         grid-template-columns: repeat(4,auto);
         justify-content: space-evenly;
     }
+
+    .contenedor-index-femenino {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .contenedor-index-femenino > div:nth-child(even) {
+        margin-top: 0;
+    }
 }

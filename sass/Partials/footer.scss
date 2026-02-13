@@ -3,11 +3,12 @@
 footer{
     background-color: $celesteOscuro;
     img{
-        width: 2rem;
+        /*width: 2rem;*/
+        @include ancho(2rem);
         margin: 1rem;
     }
     p{
-        color: white;
+        @include color(white);
         font-size: 4rem;
         margin: 1rem;
     }

@@ -5,4 +5,12 @@ $celesteOscuro: #00395d ;
 $celesteInermedio: #006596 ;
 $celesteClarito: #009dd5;
 
-$celesteBienClarito:rgba(112, 155, 255, 0.285)
+$celesteBienClarito:rgba(112, 155, 255, 0.285);
+
+@mixin ancho ($ancho){
+    width: $ancho;
+}
+
+@mixin color ($color){
+    color: $color;
+}

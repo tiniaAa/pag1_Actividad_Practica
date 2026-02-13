@@ -8,12 +8,9 @@
 body {
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
-  background-image: url("../img/imagenFondoOpcion2.png");
-  /* Hace que la imagen cubra toda la pantalla*/
-  background-size: cover;
-  /* Evita que se repita */
-  background-repeat: no-repeat;
-  /*Para que se quede fijo con el scroll*/
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.07'/%3E%3C/svg%3E"), linear-gradient(140deg, rgb(0, 46, 66) 19%, rgb(70, 101, 125) 33%, rgb(204, 216, 232) 50%, rgb(70, 101, 125) 66%, rgb(0, 46, 66) 84%);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
   background-attachment: fixed;
 }
 
@@ -43,6 +40,7 @@ header a:hover {
 }
 
 main p {
+  /*color: white;*/
   color: white;
   font-size: 1.5rem;
   background-color: #00395d;
@@ -53,16 +51,19 @@ main ul li {
 }
 
 .banderaARG {
+  /*width: 2rem;*/
   width: 2rem;
   vertical-align: middle;
 }
 
 .banderaESP {
+  /*width: 2rem;*/
   width: 2rem;
   vertical-align: middle;
 }
 
 .jugador {
+  /*width: 100%*/
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -94,6 +95,26 @@ main ul li {
   justify-self: center; /* Se asegura que la tarjeta esté centrada en su celda */
 }
 
+.contenedor-index-femenino {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 0px 15px;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contenedor-index-femenino .jugador {
+  width: 100%;
+  max-width: 300px;
+}
+
+/*disposicion distinta para que queden visualmente disto organizados los rankings*/
+/*ANIMACION*/
+/*que el 1 se agrande y se cambie el fondo a dorado, lo mismo con el 2 pero en plateado y con el 3 en bronce*/
+/*Fin animacion*/
 /*Comienzo css de torneos
 🡣*/
 .contenerdor {
@@ -115,6 +136,7 @@ main ul li {
 
 .LOGO {
   display: inline-block;
+  /*width: 15rem;*/
   width: 15rem;
 }
 
@@ -128,10 +150,26 @@ main ul li {
 }
 
 /*Fin de la css de torneos */
+.PrimerPuesto:hover {
+  background-color: #d39700; /* Color dorado de fondo */
+  background-image: url(/img/NumeroUNO.png);
+  background-repeat: no-repeat;
+  /* 2. Para centrarlo perfectamente (horizontal y vertical) */
+  background-position: left top;
+  background-size: 40%;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.SegundoPuesto:hover {
+  background-color: #A8A9AD;
+}
+
 footer {
   background-color: #00395d;
 }
 footer img {
+  /*width: 2rem;*/
   width: 2rem;
   margin: 1rem;
 }
@@ -169,6 +207,14 @@ footer p {
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: space-evenly;
+  }
+  .contenedor-index-femenino {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contenedor-index-femenino > div:nth-child(even) {
+    margin-top: 0;
   }
 }
 

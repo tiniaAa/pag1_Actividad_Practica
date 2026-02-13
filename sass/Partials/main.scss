@@ -2,7 +2,8 @@
 
 main{
     p{
-        color: white;
+        /*color: white;*/
+        @include color(white);
         font-size: 1.5rem;
         background-color: $celesteOscuro;
         margin-bottom: 0;
@@ -15,23 +16,26 @@ main{
 }
 
 .banderaARG{
-    width: 2rem;
+    /*width: 2rem;*/
+    @include ancho(2rem);
     vertical-align: middle;
 }
 .banderaESP{
-    width: 2rem;
+    /*width: 2rem;*/
+    @include ancho(2rem);
     vertical-align: middle;
 }
 .jugador{
 
-   width: 100%;
+    /*width: 100%*/
+    @include ancho(100%);
     height: auto; 
     border-radius: 10px;
     background-color: $celesteInermedio;
-
     object-fit: cover;
     object-position: top;
 }
+
 #puntos{
     color: black;
     font-size: 1.5rem;
@@ -54,6 +58,33 @@ main{
 }
 
 
+.contenedor-index-femenino{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: repeat(2, auto); 
+    gap: 0px 15px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.contenedor-index-femenino {
+    .jugador {
+        width: 100%;
+        max-width: 300px; 
+    }
+}
+/*disposicion distinta para que queden visualmente disto organizados los rankings*/
+
+
+/*ANIMACION*/
+/*que el 1 se agrande y se cambie el fondo a dorado, lo mismo con el 2 pero en plateado y con el 3 en bronce*/
+
+/*Fin animacion*/
+
+
+
 /*Comienzo css de torneos
 🡣*/
 .contenerdor{
@@ -74,7 +105,8 @@ main{
 }
 .LOGO{
     display: inline-block;
-    width: 15rem;
+    /*width: 15rem;*/
+    @include ancho(15rem);
     
 }
 .TORNEOS{

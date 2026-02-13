@@ -22,6 +22,6 @@ header{
     }
 }
 .nav-link{
-    color: white;
+    @include color(white);
     text-decoration: none;
 }

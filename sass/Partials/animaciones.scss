@@ -1,0 +1,18 @@
+.PrimerPuesto:hover{
+    background-color: #d39700; /* Color dorado de fondo */
+    background-image: url(/img/NumeroUNO.png);
+    background-repeat: no-repeat;
+    
+    /* 2. Para centrarlo perfectamente (horizontal y vertical) */
+    background-position: left top;
+    
+    
+    background-size: 40%; 
+    
+    
+    transform: scale(1.1); 
+    transition: 0.5s; 
+}
+.SegundoPuesto:hover{
+    background-color: #A8A9AD;
+}
