@@ -20,6 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: sticky;
+  z-index: 999;
   top: 0px;
 }
 header img {
@@ -163,6 +164,24 @@ main ul li {
 
 .SegundoPuesto:hover {
   background-color: #A8A9AD;
+  background-image: url(/img/NumeroDOS.png);
+  background-repeat: no-repeat;
+  /* 2. Para centrarlo perfectamente (horizontal y vertical) */
+  background-position: left top;
+  background-size: 40%;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.TercerPuesto:hover {
+  background-color: #d48a1a;
+  background-image: url(/img/NumeroTRES.png);
+  background-repeat: no-repeat;
+  /* 2. Para centrarlo perfectamente (horizontal y vertical) */
+  background-position: left top;
+  background-size: 40%;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 footer {

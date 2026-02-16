@@ -1,7 +1,9 @@
 @use "./variables" as *; 
 
 footer{
+    
     background-color: $celesteOscuro;
+
     img{
         /*width: 2rem;*/
         @include ancho(2rem);
