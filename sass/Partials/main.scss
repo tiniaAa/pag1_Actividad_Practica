@@ -37,9 +37,9 @@ main{
 }
 
 #puntos{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 1.5rem;
-    background-color: rgb(190, 209, 255);
+    background-color: rgb(83, 135, 255);
 }
 .contenedor-index{
     display: grid; 
@@ -78,45 +78,7 @@ main{
 /*disposicion distinta para que queden visualmente disto organizados los rankings*/
 
 
-/*ANIMACION*/
-/*que el 1 se agrande y se cambie el fondo a dorado, lo mismo con el 2 pero en plateado y con el 3 en bronce*/
 
-/*Fin animacion*/
-
-
-
-/*Comienzo css de torneos
-🡣*/
-.contenerdor{
-    
-    /*border: 2px solid black;*/
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-.container-fluid{
-    background-color:$celesteBienClarito;
-    padding: 2rem;
-    align-items:center;
-    justify-items:center;
-    
-}
-.row{
-    margin: 4rem;
-}
-.LOGO{
-    display: inline-block;
-    /*width: 15rem;*/
-    @include ancho(15rem);
-    
-}
-.TORNEOS{
-    display: inline;
-    background-color:rgba(255, 255, 255, 0);
-    
-}.h2{
-    font-size: 2rem;
-}
-/*Fin de la css de torneos */
 
 
 

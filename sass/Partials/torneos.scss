@@ -1,0 +1,73 @@
+@use "./variables" as *; 
+//modificacion a la pagina de torneos, y separado para trabajar mas comodo
+
+h1{
+    padding-top: 1rem;
+}
+.container-fluid{
+    padding: 0rem 2rem;   
+}
+.row{
+    align-items:center ;
+}
+// .LOGO{
+//     display: inline-block;
+//     /*width: 15rem;*/
+//     @include ancho(10rem);
+//     padding-bottom: 1rem;
+// }
+.contenedorDerecho{
+    background-color: $celesteClarito;
+    .imagenIlustrativa{
+        @include ancho(90%)
+    }
+    p{
+        text-align: end;
+        background-color:rgba(255, 255, 255, 0)
+    }
+    h2{
+        text-align: end;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 4rem; 
+            .LOGO{
+            display: inline-block;
+            /*width: 15rem;*/
+            @include ancho(10rem);
+            padding-bottom: 1rem;
+            }
+    }
+}
+.contenedorIzquierdo{
+    background-color: $celesteOscuro;
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+            .LOGO{
+            display: inline-block;
+            /*width: 15rem;*/
+            @include ancho(10rem);
+            padding-bottom: 1rem;
+            }
+            
+    }
+    .imagenIlustrativa{
+        @include ancho(90%)
+    }
+    p{
+        text-align: start;
+    }
+}
+.LOGO,svg{
+    
+    display: inline-block;
+    /*width: 15rem;*/
+    @include ancho(10rem);
+     padding-bottom: 1rem;
+            
+}
+

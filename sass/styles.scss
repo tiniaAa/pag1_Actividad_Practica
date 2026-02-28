@@ -1,13 +1,14 @@
 
 
 
-@use "./Partials/generales";
-@use "./Partials/header";
-@use "./Partials/main";
-@use "./Partials/animaciones";
-@use "./Partials/footer";
+@use "./partials/generales";
+@use "./partials/header";
+@use "./partials/main";
+@use "./partials/torneos.scss";
+@use "./partials/animaciones";
+@use "./partials/footer";
 
 
 
-@use "./Partials/mediaQueries";
- 
+@use "./partials/mediaQueries";
+  

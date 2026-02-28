@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 $fuente:"Bebas Neue", sans-serif;
-$celesteOscuro: #00395d ;
+//$celesteOscuro: #00395d ; 
+$celesteOscuro:#17253f;
 $celesteInermedio: #006596 ;
-$celesteClarito: #009dd5;
-
+$celesteClarito: #29aae1;
 $celesteBienClarito:rgba(112, 155, 255, 0.285);
 
 @mixin ancho ($ancho){

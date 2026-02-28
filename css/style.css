@@ -16,7 +16,7 @@ body {
 
 header {
   display: flex;
-  background-color: #00395d;
+  background-color: #17253f;
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -44,7 +44,7 @@ main p {
   /*color: white;*/
   color: white;
   font-size: 1.5rem;
-  background-color: #00395d;
+  background-color: #17253f;
   margin-bottom: 0;
 }
 main ul li {
@@ -74,9 +74,9 @@ main ul li {
 }
 
 #puntos {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.5rem;
-  background-color: rgb(190, 209, 255);
+  background-color: rgb(83, 135, 255);
 }
 
 .contenedor-index {
@@ -113,44 +113,72 @@ main ul li {
 }
 
 /*disposicion distinta para que queden visualmente disto organizados los rankings*/
-/*ANIMACION*/
-/*que el 1 se agrande y se cambie el fondo a dorado, lo mismo con el 2 pero en plateado y con el 3 en bronce*/
-/*Fin animacion*/
-/*Comienzo css de torneos
-🡣*/
-.contenerdor {
-  /*border: 2px solid black;*/
-  margin-left: 3rem;
-  margin-right: 3rem;
+h1 {
+  padding-top: 1rem;
 }
 
 .container-fluid {
-  background-color: rgba(112, 155, 255, 0.285);
-  padding: 2rem;
-  align-items: center;
-  justify-items: center;
+  padding: 0rem 2rem;
 }
 
 .row {
-  margin: 4rem;
+  align-items: center;
 }
 
-.LOGO {
-  display: inline-block;
-  /*width: 15rem;*/
-  width: 15rem;
+.contenedorDerecho {
+  background-color: #29aae1;
 }
-
-.TORNEOS {
-  display: inline;
+.contenedorDerecho .imagenIlustrativa {
+  width: 90%;
+}
+.contenedorDerecho p {
+  text-align: end;
   background-color: rgba(255, 255, 255, 0);
 }
-
-.h2 {
-  font-size: 2rem;
+.contenedorDerecho h2 {
+  text-align: end;
+}
+.contenedorDerecho .ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 4rem;
+}
+.contenedorDerecho .ubicacion .LOGO {
+  display: inline-block;
+  /*width: 15rem;*/
+  width: 10rem;
+  padding-bottom: 1rem;
 }
 
-/*Fin de la css de torneos */
+.contenedorIzquierdo {
+  background-color: #17253f;
+}
+.contenedorIzquierdo .ubicacion {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+.contenedorIzquierdo .ubicacion .LOGO {
+  display: inline-block;
+  /*width: 15rem;*/
+  width: 10rem;
+  padding-bottom: 1rem;
+}
+.contenedorIzquierdo .imagenIlustrativa {
+  width: 90%;
+}
+.contenedorIzquierdo p {
+  text-align: start;
+}
+
+.LOGO, svg {
+  display: inline-block;
+  /*width: 15rem;*/
+  width: 10rem;
+  padding-bottom: 1rem;
+}
+
 .PrimerPuesto:hover {
   background-color: #d39700; /* Color dorado de fondo */
   background-image: url(/img/NumeroUNO.png);
@@ -185,7 +213,7 @@ main ul li {
 }
 
 footer {
-  background-color: #00395d;
+  background-color: #17253f;
 }
 footer img {
   /*width: 2rem;*/
