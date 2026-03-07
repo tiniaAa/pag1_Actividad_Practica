@@ -115,49 +115,36 @@ main ul li {
 
 /*disposicion distinta para que queden visualmente disto organizados los rankings*/
 .Inicio {
-  background-color: rgba(112, 155, 255, 0.285);
+  background-color: #29aae1;
 }
 .Inicio h1 {
-  background-color: #006596;
-  padding: 3rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.707);
 }
 
-.presentacion {
-  margin-bottom: 20px;
+.contenerdor p {
+  background-color: transparent;
+  color: black;
 }
+
 .presentacion .imagenInicio {
   width: 80%;
 }
 .presentacion h2 {
-  color: black;
+  color: #17253f;
   font-weight: 580;
-  font-size: 3rem;
 }
 .presentacion p {
   font-family: "Smooch Sans", sans-serif;
-  font-weight: 650;
-  font-size: 1.5rem;
+  font-weight: 550;
   background-color: transparent;
   color: black;
-}
-
-.historia p, .historia li {
-  background-color: transparent;
-  color: black;
-}
-.historia h2 {
-  color: #29aae1;
-  background-color: #17253f;
-  padding: 4.5rem;
-  margin-bottom: 10px;
 }
 
 h1 {
   padding-top: 1rem;
 }
 
-.torneos {
+.container-fluid {
   padding: 0rem 2rem;
 }
 
@@ -305,4 +292,4 @@ footer p {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
