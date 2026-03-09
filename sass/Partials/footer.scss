@@ -12,7 +12,8 @@ footer{
     p{
         @include color(white);
         font-size: 4rem;
-        margin: 1rem;
+        margin: 0.5rem 1rem 1rem 1rem;
+        padding-top: 1rem;
     }
 }
 

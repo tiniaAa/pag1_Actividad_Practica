@@ -28,6 +28,15 @@
     }
 }
 .historia{
+    gap: 5rem;
+    .imagenHistoria{
+        width: 80%;
+    }
+    .titulo{
+        font-size: 3rem;
+        color: #29aae1;
+    }
+    
     p,li{
         background-color: transparent;
         color: black;
@@ -38,5 +47,16 @@
         padding: 4.5rem;
         margin-bottom: 10px;
 
+    }
+}
+.inicioNumeros{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 0.5rem;
+    background-color: $celesteOscuro;
+    padding: 2rem;
+    p{
+        font-size: 2rem;
     }
 }

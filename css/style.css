@@ -142,6 +142,16 @@ main ul li {
   color: black;
 }
 
+.historia {
+  gap: 5rem;
+}
+.historia .imagenHistoria {
+  width: 80%;
+}
+.historia .titulo {
+  font-size: 3rem;
+  color: #29aae1;
+}
 .historia p, .historia li {
   background-color: transparent;
   color: black;
@@ -151,6 +161,18 @@ main ul li {
   background-color: #17253f;
   padding: 4.5rem;
   margin-bottom: 10px;
+}
+
+.inicioNumeros {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 0.5rem;
+  background-color: #17253f;
+  padding: 2rem;
+}
+.inicioNumeros p {
+  font-size: 2rem;
 }
 
 h1 {
@@ -263,10 +285,14 @@ footer img {
 footer p {
   color: white;
   font-size: 4rem;
-  margin: 1rem;
+  margin: 0.5rem 1rem 1rem 1rem;
+  padding-top: 1rem;
 }
 
 @media (max-width: 650px) {
+  main {
+    overflow-x: hidden;
+  }
   main h1 {
     color: white;
   }
@@ -302,6 +328,19 @@ footer p {
   }
   .contenedor-index-femenino > div:nth-child(even) {
     margin-top: 0;
+  }
+  .contenedorDerecho h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .contenedorDerecho p {
+    text-align: center;
+  }
+  .contenedorIzquierdo p {
+    text-align: center;
+  }
+  .inicioNumeros {
+    display: none;
   }
 }
 
