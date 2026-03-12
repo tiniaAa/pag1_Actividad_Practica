@@ -329,6 +329,9 @@ footer p {
   .contenedor-index-femenino > div:nth-child(even) {
     margin-top: 0;
   }
+  .Inicio {
+    overflow-x: hidden;
+  }
   .contenedorDerecho h2 {
     text-align: center;
     font-size: 2rem;
