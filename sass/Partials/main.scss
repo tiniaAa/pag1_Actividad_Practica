@@ -2,32 +2,26 @@
 
 main{
     p{
-        /*color: white;*/
         @include color(white);
         font-size: 1.5rem;
         background-color: $celesteOscuro;
         margin-bottom: 0;
     }
-    ul{
-        li{
-            /*no recuerdo esto me parece que ya no es necesasrio */
-        }
-    }
 }
 
 .banderaARG{
-    /*width: 2rem;*/
+    
     @include ancho(2rem);
     vertical-align: middle;
 }
 .banderaESP{
-    /*width: 2rem;*/
+    
     @include ancho(2rem);
     vertical-align: middle;
 }
 .jugador{
 
-    /*width: 100%*/
+    
     @include ancho(100%);
     height: auto; 
     border-radius: 10px;

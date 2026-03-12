@@ -42,30 +42,23 @@ header a:hover {
 }
 
 main p {
-  /*color: white;*/
   color: white;
   font-size: 1.5rem;
   background-color: #17253f;
   margin-bottom: 0;
 }
-main ul li {
-  /*no recuerdo esto me parece que ya no es necesasrio */
-}
 
 .banderaARG {
-  /*width: 2rem;*/
   width: 2rem;
   vertical-align: middle;
 }
 
 .banderaESP {
-  /*width: 2rem;*/
   width: 2rem;
   vertical-align: middle;
 }
 
 .jugador {
-  /*width: 100%*/
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -208,7 +201,6 @@ h1 {
 }
 .contenedorDerecho .ubicacion .LOGO {
   display: inline-block;
-  /*width: 15rem;*/
   width: 10rem;
   padding-bottom: 1rem;
 }
@@ -223,7 +215,6 @@ h1 {
 }
 .contenedorIzquierdo .ubicacion .LOGO {
   display: inline-block;
-  /*width: 15rem;*/
   width: 10rem;
   padding-bottom: 1rem;
 }
@@ -236,7 +227,6 @@ h1 {
 
 .LOGO, svg {
   display: inline-block;
-  /*width: 15rem;*/
   width: 10rem;
   padding-bottom: 1rem;
 }
@@ -278,7 +268,6 @@ footer {
   background-color: #17253f;
 }
 footer img {
-  /*width: 2rem;*/
   width: 2rem;
   margin: 1rem;
 }
