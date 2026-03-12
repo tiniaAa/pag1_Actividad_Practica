@@ -233,7 +233,7 @@ h1 {
 
 .PrimerPuesto:hover {
   background-color: #d39700; /* Color dorado de fondo */
-  background-image: url(/img/NumeroUNO.png);
+  background-image: url(../../img/NumeroUNO.png);
   background-repeat: no-repeat;
   /* 2. Para centrarlo perfectamente (horizontal y vertical) */
   background-position: left top;
@@ -244,7 +244,7 @@ h1 {
 
 .SegundoPuesto:hover {
   background-color: #A8A9AD;
-  background-image: url(/img/NumeroDOS.png);
+  background-image: url(../../img/NumeroDOS.png);
   background-repeat: no-repeat;
   /* 2. Para centrarlo perfectamente (horizontal y vertical) */
   background-position: left top;
@@ -255,7 +255,7 @@ h1 {
 
 .TercerPuesto:hover {
   background-color: #d48a1a;
-  background-image: url(/img/NumeroTRES.png);
+  background-image: url(../../img/NumeroTRES.png);
   background-repeat: no-repeat;
   /* 2. Para centrarlo perfectamente (horizontal y vertical) */
   background-position: left top;
