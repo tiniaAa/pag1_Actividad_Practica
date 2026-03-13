@@ -1,5 +1,8 @@
 @media (max-width:650px)
 {
+    .navbar-toggler{
+        background-color: white;
+    }
     main{
         overflow-x: hidden;
     }
@@ -63,4 +66,38 @@
     .inicioNumeros{
         display: none;
     }
+}
+@media (min-width: 651px) and (max-width: 1280px) {
+    .navbar-toggler{
+        background-color: white;
+    }
+    
+    .contenedor-index{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: repeat(6, auto); 
+        gap: 3px 30px;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .contenedor-index-femenino{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: repeat(5, auto); 
+        gap: 0px 15px;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+
+    }
+    .Inicio{
+        overflow-x: hidden;
+    }
+    
 }
